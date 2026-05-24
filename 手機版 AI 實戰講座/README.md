@@ -125,14 +125,23 @@ LLM = Large Language Model 大型語言模型
 ### 手機上的AI APP
 
 chatGPT
+
 ![alt text](/手機版%20AI%20實戰講座//手機版%20AI%20實戰講座_assets/chatGPT.png)
+
 gemini
+
 ![alt text](/手機版%20AI%20實戰講座//手機版%20AI%20實戰講座_assets/gemini.png)
+
 grok
+
 ![alt text](/手機版%20AI%20實戰講座//手機版%20AI%20實戰講座_assets/grok.png)
+
 deepseek：只能語言問答
+
 ![alt text](/手機版%20AI%20實戰講座//手機版%20AI%20實戰講座_assets/deepseek.png)
+
 Qwen(千問)：阿里官方AI助手
+
 ![alt text](/手機版%20AI%20實戰講座//手機版%20AI%20實戰講座_assets/千問.png)
 
 [Perchance AI Image Generator](https://perchance.org/ai-text-to-image-generator?utm_source=chatgpt.com)：免費 AI 生圖練習場(品質不是頂尖，但可以不用註冊)
