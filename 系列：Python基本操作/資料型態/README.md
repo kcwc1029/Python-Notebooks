@@ -119,3 +119,5 @@ print(f"bytes 長度 (位元組數): {len(name_bytes)}")
 name_unicode = name_bytes.decode('utf-8')
 print(f"拆包後的字串: {name_unicode}")
 ```
+
+- [練習題目](./資料形態_practice/練習題目.ipynb)
