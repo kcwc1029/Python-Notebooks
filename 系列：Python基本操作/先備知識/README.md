@@ -48,6 +48,7 @@ Python 之所以會比較紅的原因，是因為他有很多的模組(可以想
 ![image](./先備知識_assets/python應用領域與常見套件.png)
 
 > 如果你想深入了解某個領域，隨時可以 Google 搜尋【`[套件名稱] python 教學`】。
+>
 > e.g.,`gradio python 教學`。
 
 ## 註解
@@ -63,7 +64,7 @@ a = 10 # 這行電腦會讀到
 
 - 變數即為一筆資料的暱稱。
 
-```python=
+```python
 x = 10      # 把數字 10 放進名為 x 的置物櫃
 name = "Amy" # 把文字 "Amy" 放進名為 name 的置物櫃
 
@@ -74,7 +75,7 @@ print(name)   # 取出 name 裡的資料 → Amy
 - 變數名稱要盡量有意義，讓別人（也包含未來的你自己）一看就知道這個變數是幹嘛的。
 - 例如：用 `annual_salary` 比用 `y` 好得多！
 
-```python=
+```python
 hourly_salary = 183   # 每小時薪資 183 元
 annual_salary = hourly_salary * 8 * 300  # 年薪計算：時薪 * 8 小時 * 300 天
 annual_fee = 9000 * 12                   # 年支出：每月 9000 元 * 12 個月
@@ -86,7 +87,7 @@ print(annual_savings) # 輸出計算結果
 
 ![image](./先備知識_assets/變數命名規則.png)
 
-- [練習題目\_A](./先備知識_practice/練習題目_A.ipynb)
+## [練習題目\_A](./先備知識_practices/練習題目_A.ipynb)
 
 ## Assignment：賦值
 
@@ -122,4 +123,4 @@ a = 3**2
 print(a)
 ```
 
-- [練習題目\_B](./先備知識_practice/練習題目_B.ipynb)
+## [練習題目\_B](./先備知識_practice/練習題目_B.ipynb)
