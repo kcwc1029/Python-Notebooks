@@ -123,4 +123,4 @@ a = 3**2
 print(a)
 ```
 
-## [練習題目\_B](./先備知識_practice/練習題目_B.ipynb)
+## [練習題目\_B](./先備知識_practices/練習題目_B.ipynb)
