@@ -18,8 +18,6 @@ env/
 # VSCode
 .vscode/
 
-# JetBrains IDE
-.idea/
 
 # macOS
 .DS_Store
@@ -27,13 +25,4 @@ env/
 # Windows
 Thumbs.db
 
-# Environment variables
-.env
 
-# Build files
-build/
-dist/
-*.egg-info/
-
-# Logs
-*.log
