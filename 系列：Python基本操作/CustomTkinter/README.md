@@ -5,6 +5,7 @@
 這就是 圖形使用者介面（GUI） 存在的原因——讓程式有按鈕、輸入框、視窗，讓任何人都能輕鬆使用。
 
 - [What's the difference between a GUI and a CLI?](https://www.youtube.com/watch?v=w9u0d4C95Zs)
+- [一口气看懂GUI如何把电脑从“天书”变日常【GUI发展史｜仿生之旅】](https://www.youtube.com/watch?v=GdrEkSmItB4)
 - [整理下Python常用的GUI模块](https://www.youtube.com/watch?v=w3GFf2ULdUo&t=1s)
 - [範例：使用tkinter](./customtkinter_src/hello_tkinter.py)
 
