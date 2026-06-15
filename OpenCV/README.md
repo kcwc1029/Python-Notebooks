@@ -423,9 +423,56 @@ YuNet 比 Haar 更適合 webcam 即時應用，對光線、角度與多人畫面
 
 ![](./OpenCV_assets/YuNet即時人臉偵測.png)
 
-- [範例：基於YuNet做Webcam即時人臉偵測](./OpenCV_src/YuNet做Webcam即時人臉偵測.py)
 - [範例：基於YuNet做Webcam即時人數統計](./OpenCV_src/YuNet做Webcam即時人數統計.py)
 - [範例：基於YuNet做Webcam即時人臉追蹤](./OpenCV_src/YuNet做Webcam即時人臉追蹤.py)
 - [範例：基於YuNet做Webcam即時自動拍照](./OpenCV_src/YuNet做Webcam即時自動拍照.py)
 - [範例：基於YuNet做Webcam即時臉部裁切](./OpenCV_src/YuNet做Webcam即時臉部裁切.py)
 - [範例：基於YuNet做Webcam即時背景模糊](./OpenCV_src/YuNet做Webcam即時背景模糊.py)
+
+## 基於 SFace 即時人臉辨識(Face Recognition)
+
+前面的 YuNet負責的是人臉偵測(Face Detection)
+
+SFace 是 OpenCV 支援的人臉辨識模型。它本質上是一個：
+
+- 深度學習(DNN)
+- Face Embedding
+- 特徵向量模型
+
+SFace 的流程如下：
+
+```
+YuNet 找到人臉
+↓
+裁切臉部
+↓
+SFace 萃取特徵
+↓
+比較特徵距離
+↓
+判斷是否同一人
+```
+
+![](./OpenCV_assets/SFace即時人臉辨識.png)
+
+### Cosine Similarity 是什麼？
+
+SFace 很常使用餘弦相似度(Cosine Similarity)判斷兩張臉有多像。
+
+| 分數     | 意思   |
+| -------- | ------ |
+| 越接近 1 | 越像   |
+| 越接近 0 | 越不像 |
+
+| 相似度 | 結果         |
+| ------ | ------------ |
+| 0.92   | 很可能同一人 |
+| 0.55   | 不太像       |
+| 0.20   | 幾乎不同人   |
+
+- [範例：基於SFace做人臉相似度分析](./OpenCV_src/SFace做人臉相似度分析.py)
+  - 請先用手機找好一張朱大哥找片
+  - 下面這兩個模型手動下載好，放到OpenCV_datasets資料夾：
+    - [face_detection_yunet_2023mar.onnx下載位置](https://github.com/opencv/opencv_zoo/blob/main/models/face_detection_yunet/face_detection_yunet_2023mar.onnx)
+    - [face_recognition_sface_2021dec.onnx下載位置](https://github.com/opencv/opencv_zoo/blob/main/models/face_recognition_sface/face_recognition_sface_2021dec.onnx)
+- [範例：基於SFace做人臉辨識系統](./OpenCV_src/SFace做人臉辨識系統.py)
