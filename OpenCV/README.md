@@ -476,3 +476,23 @@ SFace 很常使用餘弦相似度(Cosine Similarity)判斷兩張臉有多像。
     - [face_detection_yunet_2023mar.onnx下載位置](https://github.com/opencv/opencv_zoo/blob/main/models/face_detection_yunet/face_detection_yunet_2023mar.onnx)
     - [face_recognition_sface_2021dec.onnx下載位置](https://github.com/opencv/opencv_zoo/blob/main/models/face_recognition_sface/face_recognition_sface_2021dec.onnx)
 - [範例：基於SFace做人臉辨識系統](./OpenCV_src/SFace做人臉辨識系統.py)
+
+## OpenCV + Gemini
+
+### [OpenCV+Gemini美食分析](./OpenCV_src/OpenCV+Gemini美食分析.py)
+
+使用者可以上傳一張食物照片，程式會：
+
+```
+1. 使用 OpenCV 讀取圖片
+2. 自動壓縮圖片，避免圖片太大
+3. 將圖片送給 Gemini 分析
+4. 回傳食物名稱、熱量估計、蛋白質來源、減脂建議
+5. 使用 Gradio 做成簡單網頁介面
+```
+
+### [OpenCV+Gemini寵物溝通師](./OpenCV_src/OpenCV+Gemini寵物溝通師.py)
+
+### [OpenCV+Gemini塔羅解牌](./OpenCV_src/OpenCV+Gemini塔羅解牌.py)
+
+- [塔羅抽牌程式](https://tarothall.com/draw)

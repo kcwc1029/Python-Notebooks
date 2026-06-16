@@ -4,6 +4,9 @@ __pycache__/
 *.pyo
 *.pyd
 
+# 影片太大
+*.mp4
+
 # Virtual Environment
 .venv/
 venv/
