@@ -36,11 +36,9 @@ Teachable Machine 是 Google 推出的免費 AI 訓練平台。
 ❌ 影像分割：裂縫面積多大？
 ❌ 物件追蹤：人從哪裡進來？
 
-## Teachable Machine 三種專案
-
 建立專案時會看到三種模式。
 
-### Image Project(影像辨識)
+## Image Project(影像辨識)
 
 ```
 輸入圖片、攝影機畫面
@@ -54,7 +52,35 @@ Teachable Machine 是 Google 推出的免費 AI 訓練平台。
 - 手勢辨識
 - 剪刀石頭布
 
-### Audio Project(聲音辨識)
+### [實作：剪刀石頭布辨識](./實作：剪刀石頭布辨識/說明.md)
+
+### [實作：表情辨識](./實作：表情辨識/說明.md)
+
+### 實作：口罩辨識
+
+- https://www.pexels.com/zh-tw/video/8135932/
+- https://www.pexels.com/zh-tw/video/4873251/
+- https://www.pexels.com/zh-tw/video/5998416/
+- https://www.pexels.com/zh-tw/video/5356832/
+- https://www.pexels.com/zh-tw/video/7338491/
+
+### 實作：水果辨識
+
+蘋果、香蕉、橘子...
+
+### 實作：飲料辨識
+
+紅茶、綠茶、奶茶...
+
+### 實作：垃圾分類辨識
+
+塑膠、紙類、鋁罐...
+
+### 實作：寵物辨識
+
+貓、狗、兔子...
+
+## Audio Project(聲音辨識)
 
 ```
 輸入麥克風、音訊檔
@@ -68,7 +94,26 @@ Teachable Machine 是 Google 推出的免費 AI 訓練平台。
 - 咳嗽
 - 狗叫聲
 
-### Pose Project(姿勢辨識)
+## 實作：教室音量監測
+
+安靜、普通、吵鬧
+
+## 實作：咳嗽偵測/噴嚏偵測
+
+咳嗽、正常說話
+打噴嚏辨識、其他聲音
+
+### 實作：情緒語氣辨識
+
+### 實作：鐘聲辨識
+
+### 實作：音樂風格辨識
+
+### 實作：寵物聲音辨識
+
+### 實作：台語國語辨識
+
+## Pose Project(姿勢辨識)
 
 ```
 輸入人體骨架
@@ -82,44 +127,26 @@ Teachable Machine 是 Google 推出的免費 AI 訓練平台。
 - 開合跳
 - 站立
 
-## 實作：剪刀石頭布辨識
+### 實作：深蹲辨識
 
-- 點擊：Get Started
-- 選擇：Image Project
-- 選擇模型：Standard Image Model即可。
-- 建立類別：將預設類別改成：
+站立、深蹲
 
-```
-剪刀
-石頭
-布
-```
+### 實作：開合跳辨識
 
-![alt text](./Teachable_Machine_assets/處裡類別.png)
+開、合
 
-- 開始訓練：點擊：Train Model
-- 測試模型：訓練完成後。右側會出現：Preview攝影機畫面。
-- 匯出模型：點擊：Export Model
-  - TensorFlow.js：它可以直接在瀏覽器執行。因此最適合：HTML、JavaScript、網頁作品。
-  - TensorFlow：
-  - TensorFlow Lite：
-- 結合 Gemini 生成網頁
+### 實作：舉手辨識
 
-```
-請使用 HTML、CSS、JavaScript
+舉手、放下
 
-幫我設計一個現代化 AI 辨識網站
+### 實作：健身教練
 
-需求：
+伏地挺身、深蹲、休息
 
-1. 使用 Teachable Machine 模型
-2. 顯示攝影機畫面
-3. 顯示辨識結果
-4. 顯示信心分數
-5. 使用玻璃擬態風格
-6. 支援手機版
+### 實作：跌倒偵測
 
-以下是模型程式碼：
+站立、跌倒
 
-(貼上 Teachable Machine 程式碼)
-```
+### 實作：上課專注姿勢辨識
+
+坐正、趴睡、低頭滑手機
