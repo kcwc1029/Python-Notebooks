@@ -197,9 +197,7 @@ IoU ≤ 0.5：認為是不同物件
 COCO 全名Common Objects in Context，中文可以翻成「情境中的常見物件資料集」。
 COCO 裡面有33萬張以上圖片，以及250萬個以上標註物件
 
-## 第二階段：統計分析
-
-### [YOLOv8教室人數統計](./YOLOv8_src/YOLOv8教室人數統計.py)
+## [YOLOv8教室人數統計](./YOLOv8_src/YOLOv8教室人數統計.py)
 
 程式每一幀偵測 `person`，把框數當作當下人數，並每秒寫一筆 CSV。
 
@@ -210,7 +208,7 @@ COCO 裡面有33萬張以上圖片，以及250萬個以上標註物件
 - 人走出畫面後人數會下降，這是「當下畫面人數」，不是「今天到過的人數」。
 - 同一個人是否曾經出現過，需要追蹤或身分辨識，不能只靠單幀偵測。
 
-### YOLOv8即時車流辨識
+## YOLOv8即時車流辨識
 
 - [臺南市即時交通資訊服務網](https://tntcc.tainan.gov.tw/)：選取一個路口監視器，複製圖片網址。
 - [範例：YOLOv8即時車流辨識](./YOLOv8_src/YOLOv8即時車流辨識.py)
@@ -218,11 +216,13 @@ COCO 裡面有33萬張以上圖片，以及250萬個以上標註物件
 - [範例：YOLOv8即時車流辨識-車流量統計](./YOLOv8_src/YOLOv8即時車流辨識-車流量統計.py)
 - [範例：YOLOv8即時車流辨識-車流趨勢圖(CSV + Matplotlib)](./YOLOv8_src/YOLOv8即時車流辨識-車流趨勢圖.py)
 
-### [YOLOv8東京街頭散步-Youtube行人影像辨識](./YOLOv8_src/YOLOv8東京街頭散步-Youtube行人影像辨識.py)
+## [YOLOv8東京街頭散步-Youtube行人影像辨識](./YOLOv8_src/YOLOv8東京街頭散步-Youtube行人影像辨識.py)
 
-### [YOLOv8大稻埕碼頭-Youtube直播行人辨識](./YOLOv8_src/YOLOv8大稻埕碼頭-Youtube直播行人辨識.py)
+## [YOLOv8大稻埕碼頭-Youtube直播行人辨識](./YOLOv8_src/YOLOv8大稻埕碼頭-Youtube直播行人辨識.py)
 
-### [YOLOv8球賽人員辨識](./YOLOv8_src/YOLOv8球賽人員辨識.py)
+## [YOLOv8火災與濃煙辨識(未撰寫)](./YOLOv8_src/YOLOv8火災與濃煙辨識.py)
+
+## [YOLOv8球賽人員辨識](./YOLOv8_src/YOLOv8球賽人員辨識.py)
 
 COCO 80 類別中：
 | 類別 | ID |
@@ -233,10 +233,34 @@ COCO 80 類別中：
 
 因此可以針對棒球相關物件進行偵測。
 
-### [YOLOv8危險區域警示](./YOLOv8_src/YOLOv8危險區域警示.py)
+## [YOLOv8危險區域警示](./YOLOv8_src/YOLOv8危險區域警示.py)
 
+## YOLOv8-Pose
+
+YOLOv8 主要用來做物件偵測(Object Detection)。例如：人、汽車、貓、狗、手機
+
+模型會回傳：
+
+```
+類別(class)
+信心值(confidence)
+邊界框(bbox)
+```
+
+YOLOv8-Pose則是用來分析跌倒偵測、深蹲計數、揮手辨識、運動分析、姿勢評分。
+
+可以理解為物件偵測 + 人體姿態估計。
+
+- [範例：YOLOv8-Pose圖片姿態辨識](./YOLOv8_src/YOLOv8-Pose圖片姿態辨識.py)
+- [範例：YOLOv8-Pose Webcam 即時姿態辨識(還未撰寫)](./YOLOv8_src/YOLOv8-Pose_Webcam即時姿態辨識.py)
+- [範例：YOLOv8-pose + Webcam + LINE Messaging API 通知](./YOLOv8_src/YOLOv8-pose+Webcam+LINE_Messaging_API通知.py)
+- [範例：YOLOv8-Pose棒球賽分析](./YOLOv8_src/YOLOv8-Pose棒球賽分析.py)
+- [範例：YOLOv8-Pose YouTube 街景直播(實測會較卡)](./YOLOv8_src/YOLOv8-Pose_YouTube街景直播.py)
 <!-- ## 第三階段：事件偵測 -->
 
+## [YOLOv8 + YOLOv8-Pose 危險刀具偵測系統](./YOLOv8_src/YOLOv8+YOLOv8-Pose危險刀具偵測系統.py)
+
+- LINE 不能直接讀你電腦本機圖片，所以截圖要先放到一個公開網址。教學上最簡單就是用 Flask + ngrok 把截圖資料夾公開出去。
 <!-- ## 第四階段：工安應用 -->
 
 <!-- ## 第五階段：智慧交通 -->

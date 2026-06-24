@@ -496,3 +496,8 @@ SFace 很常使用餘弦相似度(Cosine Similarity)判斷兩張臉有多像。
 ### [OpenCV+Gemini塔羅解牌](./OpenCV_src/OpenCV+Gemini塔羅解牌.py)
 
 - [塔羅抽牌程式](https://tarothall.com/draw)
+
+## OpenCV + Groq
+
+- [【Groq】免費 Llama 3 API](https://www.youtube.com/watch?v=VZpNWDTqvTA&t=40s)
+- [範例：OpenCV + Groq實作股票技術線分析](./OpenCV_src/OpenCV+Groq實作股票技術線分析.py)
