@@ -329,6 +329,8 @@ MediaPipe 的 Hands，不只是「看到一隻手」。
 - [範例：單雙手都可算1-10](./MediaPipe_src/單雙手都可算1-10.py)
 - [範例：比手勢換圖片](./MediaPipe_src/比手勢換圖片.py)
   - [影片素材](https://www.instagram.com/reels/DV-qbM2Ez5q/)
+- [範例：MediaPipe 手指數字儀表板](./MediaPipe_src/MediaPipe手指數字儀表板.py)
+- [範例：MediaPipe手指關節截圖](./MediaPipe_src/MediaPipe手指關節截圖.py)
 
 ## Pose
 

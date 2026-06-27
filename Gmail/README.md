@@ -54,7 +54,7 @@ uv add
 - MIME 會在包裹外面貼上「標籤」，告訴收件人的 Email 軟體（如 Gmail）：「嘿！我這個包裹裡，第一層是純文字，第二層是一張圖片附件，第三層是一個 PDF 附件。」
 - 這樣，Gmail 收到後就知道該如何正確地「拆開」並「展示」你的信件。
 
-![upgit_20260405_1775337819.png|609x215](https://raw.githubusercontent.com/kcwc1029/obsidian-upgit-image/main/2026/04/upgit_20260405_1775337819.png)
+![](./Gmail_assets/MIME.png)
 
 | 標頭          | 名稱                            | 解釋                                                                                                                                          |
 | ------------- | ------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------- |
@@ -64,11 +64,13 @@ uv add
 | `['Bcc']`     | 密件副本<br>(Blind Carbon Copy) | 這是 `Cc` 的秘密版本。`Bcc` 列表上的人會收到信，但是其他收件人 (To, Cc) 完全不會知道你把信也寄給了 `Bcc` 的人。非常適合用於保護收件人的隱私。 |
 | `['Subject']` | 主旨                            |                                                                                                                                               |
 
-- [範例：使用MINI發送純文字信件](./Gmail_src/使用MINI發送純文字信件.py)
-- [範例：使用MINI發送HTML格式信件](./Gmail_src/使用MINI發送HTML格式信件.py)
-    - [提示詞：將純文字信件轉成HTML格式信件](./Gmail_src/將純文字信件轉成HTML格式信件.txt)
-- [範例：使用MINI發送圖片+純文字信件](./Gmail_src/使用MINI發送圖片+純文字信件.py)
-- [範例：使用MINI發送附件+純文字信件](./Gmail_src/使用MINI發送附件+純文字信件.py)
+- [範例：使用MIME發送純文字信件](./Gmail_src/使用MIME發送純文字信件.py)
+- [範例：使用MIME發送HTML格式信件](./Gmail_src/使用MIME發送HTML格式信件.py)
+  - [提示詞：將純文字信件轉成HTML格式信件](./Gmail_src/將純文字信件轉成HTML格式信件.txt)
+- [範例：使用MIME發送圖片+純文字信件](./Gmail_src/使用MIME發送圖片+純文字信件.py)
+- [範例：使用MIME發送附件+純文字信件](./Gmail_src/使用MIME發送附件+純文字信件.py)
 - [範例：客製化行銷信件大量發送](./Gmail_src/客製化行銷信件大量發送.py)
 - [範例：串接yfinance抓股票資料，寄送固定財經信件](./Gmail_src/串接yfinance抓股票資料，寄送固定財經信件.py)
-    - [提示詞：串接yfinance抓股票資料，寄送固定財經信件](./Gmail_src/串接yfinance抓股票資料，寄送固定財經信件.txt)
+  - [提示詞：串接yfinance抓股票資料，寄送固定財經信件](./Gmail_src/串接yfinance抓股票資料，寄送固定財經信件.txt)
+- [範例：系統發送gmail](./Gmail_src/系統發送Gmail.py)
+  - [檢討：系統發送gmail](./系統發送gmail.txt)

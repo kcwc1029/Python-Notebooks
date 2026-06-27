@@ -1,13 +1,11 @@
-# Qrcode
-
 > 補充：
 > 電腦讀取qrcode 線上工具：https://zxing.org/w/decode.jspx
 
 ![upgit_20260502_1777735236.png|338x189](https://raw.githubusercontent.com/kcwc1029/obsidian-upgit-image/main/2026/05/upgit_20260502_1777735236.png)
 
-## Barcode
+# Barcode
 
-### 安裝套件
+## 安裝套件
 
 ```py
 # !pip install python-barcode -q
@@ -18,7 +16,7 @@ uv add python-barcode
 - [範例：查看所有支援的條碼類型](./Qrcode_src/查看所有支援的條碼類型.py)
 - [EAN-13條碼要素：從基本理解到生成](https://zh.onlinetoolcenter.com/blog/EAN-13-Barcode-Essentials-From-Basic-Understanding-to-Generate.html)
 
-### 不同條碼格式，能存的東西差很多
+## 不同條碼格式，能存的東西差很多
 
 | 條碼格式 | 可存英文 | 可存中文 | 可存數字 | 常見用途  |
 | -------- | -------- | -------- | -------- | --------- |
@@ -28,7 +26,7 @@ uv add python-barcode
 | Code39   | ✅       | ❌       | ✅       | 工業      |
 | QRCode   | ✅       | ✅       | ✅       | 網址/文字 |
 
-### 補充：查看SVG與PNG
+## 補充：查看SVG與PNG
 
 ![upgit_20260502_1777735444.png](https://raw.githubusercontent.com/kcwc1029/obsidian-upgit-image/main/2026/05/upgit_20260502_1777735444.png)
 
@@ -36,15 +34,18 @@ uv add python-barcode
 - [Vibe Coding 玩家必備的 SVG 進階操作指南](https://www.youtube.com/watch?v=qSiu53ChHeE&t=70s)
 
 - [範例：建立一個條碼，轉成svg](./Qrcode_src/建立一個條碼，轉成svg.py)
-    - 優點：無限放大不失真，適合印刷。
-    - 缺點：一般圖片檢視器可能打不開。
+  - 優點：無限放大不失真，適合印刷。
+  - 缺點：一般圖片檢視器可能打不開。
 - [範例：建立一個條碼，轉成png](./Qrcode_src/建立一個條碼，轉成png.py)
-    - 優點：通用圖片格式，大家都能開。
-    - 關鍵：必須加上 writer=ImageWriter() 參數
+  - 優點：通用圖片格式，大家都能開。
+  - 關鍵：必須加上 writer=ImageWriter() 參數
 - [補充：可以拿來測試EAN13的數字碼](./Qrcode_datasets/可以拿來測試EAN13的數字碼.txt)
 
+## 實作
+
 - [實作：Python + Gradio barcode條碼產生](./Qrcode_src/Python_Gradio_barcode條碼產生.py)
-    - [提示詞：Python + Gradio barcode條碼產生](./Qrcode_src/Python_Gradio_barcode條碼產生.txt)
+  - [提示詞：Python + Gradio barcode條碼產生](./Qrcode_src/Python_Gradio_barcode條碼產生.txt)
+- [作業：實驗室設備借用與維修管理系統](./Qrcode_src/實驗室設備借用與維修管理系統.md)
 
 ## Qrcode
 
