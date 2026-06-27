@@ -67,6 +67,7 @@ uv add
 - [範例：使用MIME發送純文字信件](./Gmail_src/使用MIME發送純文字信件.py)
 - [範例：使用MIME發送HTML格式信件](./Gmail_src/使用MIME發送HTML格式信件.py)
   - [提示詞：將純文字信件轉成HTML格式信件](./Gmail_src/將純文字信件轉成HTML格式信件.txt)
+  - [成大亂發郵件](./Gmail_assets/系統亂發信件A.PNG)
 - [範例：使用MIME發送圖片+純文字信件](./Gmail_src/使用MIME發送圖片+純文字信件.py)
 - [範例：使用MIME發送附件+純文字信件](./Gmail_src/使用MIME發送附件+純文字信件.py)
 - [範例：客製化行銷信件大量發送](./Gmail_src/客製化行銷信件大量發送.py)
